@@ -5,7 +5,7 @@ export default function About() {
     //arrow function
     const changeMode= ()=>{
          console.log("cliked the mode change button")
-         if(myStyle.backgroundColor == 'white'){
+         if(myStyle.backgroundColor === 'white'){
              setmyStyle({
                 backgroundColor : 'black',
                 color : 'white'

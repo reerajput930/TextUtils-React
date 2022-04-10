@@ -56,7 +56,7 @@ function App() {
 
     {/* creating class = container (class of bootstrap) */}
     <div className="container">
-            
+    {/* <TextArea heading= "Write The Text Below!" colorText={textColor}/> */}
         <Routes>
           <Route  path="/" element={ <TextArea heading= "Write The Text Below!" colorText={textColor}/> }/>
           <Route  path="/About" element={<About/>}/>
