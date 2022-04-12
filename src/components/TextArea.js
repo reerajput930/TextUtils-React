@@ -79,8 +79,8 @@ export default function TextArea(props) {
 
     <div className={`container  my-5 info text-${props.colorText}`}>
        <p><i>No of Charactors: </i>{Text.length}</p>
-       <p> <i>No of word: </i>{Text.split(' ').length}</p>
-       <p> <i>Reanding Time(min): </i>{0.004* (Text.split(' ').length)} min</p>
+       <p> <i>No of word: </i>{Text.split(' ').filter((Element)=>{return Element.length!==0}).length}</p>
+       <p> <i>Reanding Time(min): </i>{0.004* (Text.split(' ').filter((Element)=>{return Element.length!==0}).length)} min</p>
     </div>
     </>
   )
